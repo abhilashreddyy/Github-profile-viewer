@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <style media="screen">
+
+
+    </style>
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="js/frontend.js"></script>
+    <script src='js/backend.js'></script>
+
+  </head>
+  <body>
+    <div class="nav_bar">
+      <div class="first_elem">
+        <img src="img/download.png" alt="">
+      </div>
+      <div class="second_elem">
+        <input type="text" name="" value="" placeholder="Search Git Hub">
+      </div>
+      <div class="third_elem">
+        <ul class = 'navbar_list'>
+          <li><a href="#">Pull Requests</a></li>
+          <li><a href="#">Issues</a></li>
+          <li><a href="#">Gist</a></li>
+        </ul>
+      </div>
+      <div class="navbar_right">
+        <ul>
+          <li class = 'dropdown'><a href="#" class = "dropbtn" onclick = "firstdropdown()">+</a>
+            <div class="dropdown-content">
+              <a href="#" onmouseenter = "backgroundcolor_func(this)" onmouseleave = "remove_background_color(this)" >New Repository</a>
+              <a  onmouseenter = "backgroundcolor_func(this)" onmouseleave = "remove_background_color(this)">New Gist</a>
+              <a onmouseenter = "backgroundcolor_func(this)" onmouseleave = "remove_background_color(this)">New Organisation</a>
+            </div>
+          </li>
+          <li class = 'dropdown1'><img src="img/repo.png" alt="" class = 'dropbtn1' onclick="seconddropdown()">
+            <div class="dropdown-content1">
+              <a href="#" onmouseenter = "backgroundcolor_func(this)" onmouseleave = "remove_background_color(this)">signed in as</a>
+              <a href="#" onmouseenter = "backgroundcolor_func(this)" onmouseleave = "remove_background_color(this)">abhilashreddyy</a>
+              <hr>
+              <a href="#" onmouseenter = "backgroundcolor_func(this)" onmouseleave = "remove_background_color(this)">Your Profile</a>
+              <a href="#" onmouseenter = "backgroundcolor_func(this)" onmouseleave = "remove_background_color(this)">Your Stars</a>
+              <a href="#" onmouseenter = "backgroundcolor_func(this)" onmouseleave = "remove_background_color(this)">Explore</a>
+              <a href="#" onmouseenter = "backgroundcolor_func(this)" onmouseleave = "remove_background_color(this)">Integrations</a>
+              <a href="#" onmouseenter = "backgroundcolor_func(this)" onmouseleave = "remove_background_color(this)">Help</a>
+              <hr>
+              <a href="#" onmouseenter = "backgroundcolor_func(this)" onmouseleave = "remove_background_color(this)">Settings</a>
+              <a href="#" onmouseenter = "backgroundcolor_func(this)" onmouseleave = "remove_background_color(this)"w>Sign Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  <div class="main_div">
+    <div class="main_div">
+      <div class="left_div" id = "profile_form">
+        <img src = "" alt="profile pic" id = "image" >
+        <h4>aksbdaksba</h4>
+        <a href="#" id = "add_a_bio">Add a bio</a>
+        <button type="button" name="button" id = "leftdiv_button_style">Edit Profile</button>
+        <hr></hr>
+      </div>
+      <div class="right_div">
+        <div class="first_div">
+          <div class="first_div_left">
+            <p>ProTip! Updating your profile with your name, location, and a profile picture helps other GitHub users get to know you.
+</p>
+          </div>
+          <div class="first_div_right">
+            <button type="button" class="btn btn-success">Success</button>
+          </div>
+
+        </div>
+        <div class="second_div">
+          <ul class = "preferences">
+            <li >Overview</li>
+            <li ><b>Repositories</b><span class="badge" id = "repos"> 5</span></li>
+            <li>Stars<span class="badge" id = 'stars'> 0</span></li>
+            <li>Followers<span class="badge" id ="followers">0</span></li>
+            <li>Following<span class="badge" id = "following">0</span></li>
+          </ul>
+          <hr></hr>
+        </div>
+        <div class="special">
+          <h4>Popular Repositories</h4>
+          <p>customise your pinned repositories</p>
+        </div>
+        <div class="overview_div">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </body>
+</html>

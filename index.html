@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LogIn</title>
+	<style>
+
+		#page
+		{
+			background-image: url("img/bg.jpg");
+			width: 99.9%;
+			height: 638px;
+			opacity: .8;
+			z-index: -1;
+			left: 0px;
+			top: 0px;
+			position: absolute;
+		}
+		.Signup
+		{
+			margin-left: 15%;
+			margin-top:9%;
+			width: 350px;
+			height: 400px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+		.github,.facebook,.twitter
+		{
+			width: 100%;
+			height: 80px;
+			background-color: #088837;
+			border-color: #088837;
+			font-size: 16px;
+			font-style: italic;
+			border-radius: 5px;
+			transition: .8s;
+
+		}
+		.facebook{
+			background-color: #4267b2;
+			border-color: #4267b2;
+
+		}
+		.twitter
+		{
+			background-color: #0077B5;
+			border-color: #0077B5;
+		}
+		.github:hover,.facebook:hover,.twitter:hover
+		{
+			box-shadow: 10px 10px 5px #191919;
+			width: 102%;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+
+		<div id="page">
+
+		</div>
+		<div class="Signup">
+		<h2 style="color:white">SignIn with:</h2>
+			<button type="Submit" value="GitHub" class="github" id = 'giithub' onclick="redirect()">Github</button>
+			<input type="input" placeholder="enter your username" class="facebook"  id = "name">
+		</div>
+		  </body>
+		</html>
+
+
+
+<script type="text/javascript">
+var username ;
+
+function redirect(){
+	username = document.getElementById('name').value;
+	var xhr = new XMLHttpRequest();
+	console.log(username);
+	xhr.onreadystatechange = myCallback;
+	xhr.open("GET",'https://api.github.com/users/'+username,true);
+	xhr.send('');
+	function myCallback(){
+		if(xhr.readyState < 4){
+			return;
+		}
+		if(xhr.status != 200){
+			alert('error');
+			return ;
+		}
+		var user = JSON.parse(xhr.responseText);
+		if(user.login == username)
+		{
+
+				window.location.href = "file:///home/reddy/Documents/gitpage-master/Github/profile.html";
+				if(typeof(Storage)!=="undefined")
+				{
+						sessionStorage.login_user = username;
+				}
+		}
+}
+
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+  img[id = git_img]{
+    height : 50px;
+    width :50px;
+  }
+  img[id = git_img1]{
+    height : 30px;
+    width :30px;
+    margin-top: 10px;
+  }
+  #navbar_left_style{
+    padding-left: 190px;
+  }
+  #navbar_right_style{
+    font-size: 20px;
+    padding-right: 190px
+  }
+  #profile_form{
+    margin-top : 50px;
+    padding-left : 200px;
+    float : left;
+  }
+  #profile_form img{
+    border-radius: 10px;
+    width : 200px;
+    height : 200px;
+
+  }
+  .main_div{
+    display : flex;
+    flex : 0 0 1350px;
+
+  }
+  #leftdiv_button_style{
+    width : 100%;
+    margin-top: 12px;
+  }
+  h4{
+    padding-top: 12px;
+  }
+  #add_a_bio{
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+  .first_div{
+    background-color: #f1f6fb;
+    width : 78%;
+    height : 100px;
+    border-radius: 4px;
+
+    display: inline-block;
+  }
+  .first_div button{
+    float : right;
+    margin-left: 30px;
+  }
+  .right_div{
+    width : 65%;
+    float: right;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .first_div_left{
+    padding : 20px;
+    float: left;
+    width:75%;
+  }
+  .first_div_right{
+    float: right;
+    padding-top : 30px;
+    padding-right: 20px;
+  }
+  .preferences li{
+    display: inline-block;
+    margin-right:30px;
+    padding-bottom: 20px;
+    cursor:pointer;
+
+  }
+  .preferences span{
+    margin-left : 7px
+  }
+  .second_div{
+    margin-top: 40px;
+    height : 60px;
+    width : 75%;
+  }
+  hr{
+    height: 1px;
+    margin: 8px 1px;
+    background-color: #e1e4e8;
+    border: 0px;
+  }
+  .overview_div{
+    display : flex;
+    flex-wrap: wrap;
+  }
+  .special{
+    width: 75%;
+    height: 30px;
+    margin-top: 20px;
+  }
+  .special p{
+    float :right;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .special h4{
+      width : 50%;
+      margin-right: 0px;
+      float: left;
+      display: inline-block;
+      padding-top: 0px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+  .inner_overview_div {
+    width : 38%;
+    height : 100px;
+    border : 1px solid #ddd;
+    display : inline-block;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .overview_head{
+    color : blue;
+    vertical-align: top;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+  .overview_message{
+    vertical-align: middle;
+    margin-left: 5px;
+    color : black;
+    margin-top: 10px;
+  }
+  .nav_bar{
+    width: 1060px;
+    display : flex;
+    flex : 0 0 1150px;
+    height : 40px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    background-color: black;
+    padding: 5px 12% 5px 10%;
+    margin-top: 0px;
+
+  }
+  .first_elem img{
+    height : 40px;
+    width: 40px;
+  }
+  .second_elem input{
+    border :0px;
+    height : 27px;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #24292e;
+    border-radius: 3px;
+    padding-left: 5px;
+  }
+  .third_elem{
+    display: flex ;
+    flex : 0 0 300px;
+  }
+
+
+  .navbar_list{
+    color : rgba(255,255,255,0.75);
+    list-style-type: none;
+    margin : 6px 0px 6px 0px;
+    padding-top: 5px;
+    padding-left: 20px;
+  }
+  .navbar_list li{
+    display : inline;
+    padding-left: 10px;
+  }
+  .navbar_list li a{
+    color : rgba(255,255,255,0.75);
+    text-decoration: none;
+  }
+  .navbar_right{
+    margin-left: 32%;
+
+  }
+  .navbar_right ul{
+    margin-top: 4px;
+    display: flex;
+    padding-left: 10px;
+    flex: 0 0 100px;
+  }
+  .navbar_right ul li{
+    display: inline;
+    color : rgba(255,255,255,0.75);
+    list-style-type: none;
+
+  }
+  .navbar_right ul li img{
+    height : 20px;
+    width: 20px;
+    margin : 10px;
+  }
+  .navbar_right ul li a{
+
+  }
+  .dropdown-content{
+    display: none;
+    width: 170px;
+    height : 90px;
+    flex-direction: column;
+    position : absolute;
+    background-color: white;
+    border: 1px solid rgba(27,31,35,0.15);
+    box-shadow: 0 3px 12px rgba(27,31,35,0.15);
+    right: 16%;
+    top : 60px;;
+    border-radius: 3px;
+
+  }
+  .dropbtn{
+    font-size: 30px;
+    text-decoration: none;
+  }
+  .dropdown-content a{
+    color: black;
+  }
+
+  .dropdown-content a{
+    text-decoration: none;
+    padding : 5px;
+  }
+  .dropdown-content1{
+    display: none;
+    width: 170px;
+    height : 290px;
+    flex-direction: column;
+    position : absolute;
+    background-color: white;
+    border: 1px solid rgba(27,31,35,0.15);
+    box-shadow: 0 3px 12px rgba(27,31,35,0.15);
+    right: 12%;
+    top : 60px;
+    border-radius: 3px;
+
+  }
+  .dropdown-content1 a{
+    color: black;
+  }
+  .dropdown-content1 hr{
+    height: 1px;
+    margin: 8px 1px;
+    background-color: #e1e4e8;
+    border: 0px;
+  }
+
+  .dropdown-content1:hover{
+    display:flex;
+  }
+  .dropdown-content1 a{
+    text-decoration: none;
+    padding : 5px;
+  }
