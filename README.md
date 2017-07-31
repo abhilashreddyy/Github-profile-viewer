@@ -1,3 +1,3 @@
 # Github profile viewer
 
-[ https://abhilashreddyy.github.io/newgithub/](Click here) for functional website of this project
+[click here](https://abhilashreddyy.github.io/newgithub/) for functional website of this project
